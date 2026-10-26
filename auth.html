@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7a2e1d" />
+    <meta
+      name="description"
+      content="Create your Mojela's account to find or offer trusted infant care in Limpopo."
+    />
+    <title>Mojela's — Register or Log in</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" aria-label="Mojela's home">
+        <h1>Mojela's</h1>
+        <p>Trusted Gogos and Aunties</p>
+      </a>
+
+      <nav aria-label="Navigation">
+        <a href="index.html">Back to home</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ==================== REGISTER ==================== -->
+      <section>
+        <h2>Create your account</h2>
+        <p>It takes less than a minute.</p>
+
+        <p>I am:</p>
+        <nav aria-label="Choose your role">
+          <a href="#register-mother" aria-current="true"
+            >A mother looking for care</a
+          >
+          <a href="#register-caregiver">A Gogo or Auntie offering care</a>
+        </nav>
+
+        <form action="mother.html" method="get">
+          <label for="regName">Full name</label>
+          <input
+            type="text"
+            id="regName"
+            name="name"
+            placeholder="e.g. Lerato Seopela"
+            autocomplete="name"
+            required
+          />
+
+          <label for="regEmail">Email</label>
+          <input
+            type="email"
+            id="regEmail"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          />
+
+          <label for="regPhone">WhatsApp number</label>
+          <input
+            type="tel"
+            id="regPhone"
+            name="phone"
+            placeholder="e.g. 0712345678"
+            inputmode="tel"
+            autocomplete="tel"
+            required
+          />
+
+          <label for="regLocation">Town or area in Limpopo</label>
+          <input
+            type="text"
+            id="regLocation"
+            name="location"
+            list="locations"
+            placeholder="e.g. Mankweng"
+            autocomplete="address-level2"
+            required
+          />
+          <datalist id="locations">
+            <option value="Polokwane"></option>
+            <option value="Mankweng"></option>
+            <option value="Seshego"></option>
+            <option value="Lebowakgomo"></option>
+            <option value="Tzaneen"></option>
+            <option value="Thohoyandou"></option>
+            <option value="Musina"></option>
+          </datalist>
+
+          <label for="regPassword">Password</label>
+          <input
+            type="password"
+            id="regPassword"
+            name="password"
+            placeholder="At least 6 characters"
+            minlength="6"
+            autocomplete="new-password"
+            required
+          />
+
+          <fieldset>
+            <legend>About your baby</legend>
+
+            <label for="regBabyAge">Baby's age</label>
+            <select id="regBabyAge" name="babyAge" required>
+              <option value="" disabled selected>Choose age</option>
+              <option>2 months</option>
+              <option>3 months</option>
+              <option>4 months</option>
+              <option>5 months</option>
+              <option>6 months</option>
+              <option>7–12 months</option>
+              <option>Over 12 months</option>
+            </select>
+          </fieldset>
+
+          <button type="submit">Create account</button>
+        </form>
+      </section>
+
+      <!-- ==================== LOGIN ==================== -->
+      <section>
+        <h2>Already have an account?</h2>
+        <p>Log in below.</p>
+
+        <form action="mother.html" method="get">
+          <label for="loginEmail">Email</label>
+          <input
+            type="email"
+            id="loginEmail"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          />
+
+          <label for="loginPassword">Password</label>
+          <input
+            type="password"
+            id="loginPassword"
+            name="password"
+            placeholder="Your password"
+            autocomplete="current-password"
+            required
+          />
+
+          <button type="submit">Log in</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>TwoMinds Rosebank hackathon</p>
+    </footer>
+  </body>
+</html>
