@@ -9,7 +9,7 @@
       content="Your Mojela's dashboard — see ongoing care requests from mothers in your area."
     />
     <title>Mojela's — Gogo Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
 
   <body>
@@ -36,20 +36,13 @@
         </p>
       </section>
 
-      <!-- ========== AT A GLANCE ========== -->
-      <section>
-        <h2>At a glance</h2>
-
-        <dl>
-          <dt>New requests</dt>
-          <dd>2</dd>
-
-          <dt>Accepted</dt>
-          <dd>1</dd>
-
-          <dt>Total</dt>
-          <dd>3</dd>
-        </dl>
+      <!-- ========== NOTIFICATION ========== -->
+      <section id="notifications">
+        <h2>You have 3 new requests</h2>
+        <p>
+          Three mothers are waiting for your reply. Once you accept one, the
+          others will be closed.
+        </p>
       </section>
 
       <!-- ========== REQUESTS FROM MOTHERS ========== -->
@@ -72,7 +65,7 @@
           <button type="button">Decline</button>
         </article>
 
-        <!-- Request card 2 — ACCEPTED -->
+        <!-- Request card 2 — PENDING -->
         <article>
           <h3>Naledi Mashego</h3>
           <p>Lebowakgomo · Baby 3 months old</p>
@@ -82,8 +75,9 @@
             November? I need someone until my daughter is at least a year old."
           </p>
           <p>Sent 20 October 2025</p>
-          <p>Status: Accepted</p>
-          <a href="https://wa.me/27710000003">Chat on WhatsApp</a>
+          <p>Status: Pending</p>
+          <button type="button">Accept</button>
+          <button type="button">Decline</button>
         </article>
 
         <!-- Request card 3 — PENDING -->
@@ -102,45 +96,14 @@
           <button type="button">Decline</button>
         </article>
       </section>
-
-      <!-- ========== PROFILE ========== -->
-      <section>
-        <h2>Your profile</h2>
-
-        <dl>
-          <dt>Name</dt>
-          <dd>Gogo Maria Mokgobu</dd>
-
-          <dt>Email</dt>
-          <dd>gogo@mojelas.co.za</dd>
-
-          <dt>WhatsApp</dt>
-          <dd>0710000000</dd>
-
-          <dt>Town</dt>
-          <dd>Mankweng</dd>
-
-          <dt>Experience</dt>
-          <dd>30 years</dd>
-
-          <dt>Monthly rate</dt>
-          <dd>R3 000 per month</dd>
-
-          <dt>Available from</dt>
-          <dd>November 2025</dd>
-
-          <dt>Bio</dt>
-          <dd>
-            Over 30 years of experience caring for newborns and young babies. I
-            treat every child as if they were my own.
-          </dd>
-        </dl>
-      </section>
     </main>
 
     <!-- ==================== FOOTER ==================== -->
     <footer>
       <p>TwoMinds Rosebank hackathon</p>
     </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="javaScripts/app.js"></script>
   </body>
 </html>
