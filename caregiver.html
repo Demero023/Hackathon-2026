@@ -21,7 +21,7 @@
       </a>
 
       <nav aria-label="Account">
-        <a href="index.html">Log out</a>
+        <a href="index.html" id="logoutBtn">Log out</a>
       </nav>
     </header>
 
@@ -29,7 +29,7 @@
     <main>
       <!-- ========== GREETING ========== -->
       <section>
-        <h2>Dumela, Gogo Maria</h2>
+        <h2 id="caregiverGreeting">Dumela, Gogo Maria</h2>
         <p>
           Mothers in your area are looking for someone they can trust to care
           for their child for the months ahead. Here are their requests.
@@ -96,6 +96,13 @@
           <button type="button">Decline</button>
         </article>
       </section>
+      <!-- ========== PROFILE ========== -->
+      <section>
+        <h2>Your profile</h2>
+        <dl id="caregiverProfile">
+          <!-- caregiver.js -->
+        </dl>
+      </section>
     </main>
 
     <!-- ==================== FOOTER ==================== -->
@@ -105,5 +112,6 @@
 
     <!-- ==================== SCRIPTS ==================== -->
     <script src="javaScripts/app.js"></script>
+    <script src="javaScripts/caregiver.js"></script>
   </body>
 </html>
