@@ -30,15 +30,16 @@
         <h2>Create your account</h2>
         <p>It takes less than a minute.</p>
 
-        <p>I am:</p>
-        <nav aria-label="Choose your role">
-          <a href="#register-mother" aria-current="true"
-            >A mother looking for care</a
-          >
-          <a href="#register-caregiver">A Gogo or Auntie offering care</a>
-        </nav>
+        <div>
+          <button type="button" id="roleParentBtn" data-role="parent">
+            I am a mother looking for care
+          </button>
+          <button type="button" id="roleCaregiverBtn" data-role="caregiver">
+            I am a Gogo or Auntie offering care
+          </button>
+        </div>
 
-        <form action="mother.html" method="get">
+        <form action="mother.html" method="get" id="registerForm">
           <label for="regName">Full name</label>
           <input
             type="text"
@@ -101,7 +102,7 @@
             required
           />
 
-          <fieldset>
+          <fieldset id="parentFields">
             <legend>About your baby</legend>
 
             <label for="regBabyAge">Baby's age</label>
@@ -117,6 +118,18 @@
             </select>
           </fieldset>
 
+          <fieldset id="caregiverFields" hidden disabled>
+            <legend>About your experience</legend>
+
+            <label for="regExperience">Years of experience</label>
+            <input type="number" id="regExperience" min="0" max="70" />
+
+            <label for="regRate">Monthly rate (Rand)</label>
+            <input type="number" id="regRate" min="0" step="100" />
+
+            <label for="regBio">Short bio (optional)</label>
+            <textarea id="regBio" rows="3" maxlength="200"></textarea>
+          </fieldset>
           <button type="submit">Create account</button>
         </form>
       </section>
@@ -126,7 +139,7 @@
         <h2>Already have an account?</h2>
         <p>Log in below.</p>
 
-        <form action="mother.html" method="get">
+        <form action="mother.html" method="get" id="loginForm">
           <label for="loginEmail">Email</label>
           <input
             type="email"
@@ -157,5 +170,6 @@
     </footer>
     <!-- ==================== SCRIPTS ==================== -->
     <script src="javaScripts/app.js"></script>
+    <script src="javaScripts/auth.js"></script>
   </body>
 </html>

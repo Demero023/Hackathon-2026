@@ -525,3 +525,24 @@ form > p:last-of-type {
     font-size: 1.35rem;
   }
 }
+/* Role toggle buttons on register form */
+#roleParentBtn,
+#roleCaregiverBtn {
+  padding: 0.7rem 1rem;
+  border: 0.13rem solid #7a2e1d;
+  background-color: #ffffff;
+  color: #7a2e1d;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: inherit;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#roleParentBtn.active,
+#roleCaregiverBtn.active {
+  background-color: #7a2e1d;
+  color: #ffffff;
+}
