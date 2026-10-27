@@ -50,86 +50,48 @@
           />
           <button type="submit">Search</button>
         </form>
-
-        <!-- Caregiver card 1 -->
-        <article>
-          <h3>Gogo Maria Mokgobu</h3>
-          <p>Mankweng</p>
-          <p>30 years of experience · R3 000 per month</p>
-          <p>Available from November 2025</p>
-          <p>
-            Over 30 years of experience caring for newborns and young babies.
-          </p>
-          <a href="#my-requests">Request care</a>
-        </article>
-
-        <!-- Caregiver card 2 -->
-        <article>
-          <h3>Auntie Rebecca Maphutha</h3>
-          <p>Polokwane</p>
-          <p>12 years of experience · R3 500 per month</p>
-          <p>Available now</p>
-          <p>
-            Patient and warm, experienced with babies from 2 months to 3 years.
-          </p>
-          <a href="#my-requests">Request care</a>
-        </article>
-
-        <!-- Caregiver card 3 -->
-        <article>
-          <h3>Gogo Sarah Maluleke</h3>
-          <p>Seshego</p>
-          <p>20 years of experience · R2 800 per month</p>
-          <p>Available from December 2025</p>
-          <p>Specialises in twins and babies who struggle to sleep.</p>
-          <a href="#my-requests">Request care</a>
-        </article>
+        <!-- JS fills this with caregiver cards -->
+        <div id="caregiverList"></div>
       </section>
 
       <!-- ========== MY REQUESTS ========== -->
+
       <section id="my-requests">
         <h2>My requests</h2>
-
-        <!-- Request card 1 -->
-        <article>
-          <h3>Gogo Sarah Maluleke</h3>
-          <p>Sent 22 October 2025</p>
-          <p>
-            "Dumela Gogo Sarah. I return to work in two weeks and need someone
-            to look after my 2-month-old, ideally for the next 6 months. Are you
-            available?"
-          </p>
-          <p>Status: Pending</p>
-        </article>
-
-        <p>
-          Requests you send to caregivers will appear here, along with their
-          status.
-        </p>
+        <div id="motherRequestList"></div>
       </section>
 
+      <!-- ========== REQUEST MODAL ========== -->
+      <div id="requestModal" hidden>
+        <div>
+          <h2 id="requestModalTitle">Request care</h2>
+
+          <form id="requestForm">
+            <label for="reqMessage">Your message</label>
+            <textarea
+              id="reqMessage"
+              rows="4"
+              maxlength="300"
+              placeholder="Dumela! I return to work in two weeks and need someone to look after my baby for the next 6 months..."
+              required
+            ></textarea>
+
+            <label for="reqDate">
+              Preferred start date <span>(optional)</span>
+            </label>
+            <input type="date" id="reqDate" />
+
+            <button type="submit">Send request</button>
+            <button type="button" id="cancelRequestBtn">Cancel</button>
+          </form>
+        </div>
+      </div>
       <!-- ========== PROFILE ========== -->
       <section>
         <h2>Your profile</h2>
 
         <dl id="motherProfile">
-          <dt>Name</dt>
-          <dd>Lerato Seopela</dd>
-
-          <dt>Email</dt>
-          <dd>mama@mojelas.co.za</dd>
-
-          <dt>WhatsApp</dt>
-          <dd>0710000002</dd>
-
-          <dt>Town</dt>
-          <dd>Seshego</dd>
-
-          <dt>Baby's age</dt>
-          <dd>2 months</dd>
-
-          <dt>Care needed until</dt>
-          <dd>Baby is 8 months old</dd>
+          <!-- Profile details will be populated here by JavaScript -->
         </dl>
       </section>
     </main>

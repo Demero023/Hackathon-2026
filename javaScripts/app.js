@@ -89,7 +89,11 @@ function logout() {
  * rather than silently show the wrong dashboard.
  */
 function homePageFor(user) {
-  if (user.role === "caregiver") return "caregiver.html";
-  if (user.role === "parent") return "mother.html";
-  return "index.html";
+  if (user.role === "caregiver") {
+    return "caregiver.html";
+  } else if (user.role === "parent") {
+    return "mother.html";
+  } else {
+    return "index.html";
+  }
 }

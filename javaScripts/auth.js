@@ -6,9 +6,7 @@
 const alreadyLoggedIn = currentUser();
 
 if (alreadyLoggedIn) {
-  if (alreadyLoggedIn) {
-    location.href = homePageFor(alreadyLoggedIn);
-  }
+  location.href = homePageFor(alreadyLoggedIn);
 }
 
 // Which role the user has picked. Starts as "parent" because
