@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7a2e1d" />
+    <meta
+      name="description"
+      content="Your Mojela's dashboard — find a trusted Gogo or Auntie for ongoing care of your child."
+    />
+    <title>Mojela's — Mother Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+      <a href="mother.html" aria-label="Mojela's mother dashboard">
+        <h1>Mojela's</h1>
+        <p>Mother dashboard</p>
+      </a>
+
+      <nav aria-label="Account">
+        <a href="index.html">Log out</a>
+      </nav>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main>
+      <!-- ========== GREETING ========== -->
+      <section>
+        <h2>Dumela, Lerato</h2>
+        <p>
+          Looking for a Gogo or Auntie to care for your child while you are at
+          work? Find someone you trust for the months ahead.
+        </p>
+      </section>
+
+      <!-- ========== FIND A CAREGIVER ========== -->
+      <section>
+        <h2>Find a Gogo or Auntie</h2>
+
+        <form role="search">
+          <label for="searchInput">Search by name or town</label>
+          <input
+            type="search"
+            id="searchInput"
+            name="q"
+            placeholder="e.g. Polokwane"
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <!-- Caregiver card 1 -->
+        <article>
+          <h3>Gogo Maria Mokgobu</h3>
+          <p>Mankweng</p>
+          <p>30 years of experience · R3 000 per month</p>
+          <p>Available from November 2025</p>
+          <p>
+            Over 30 years of experience caring for newborns and young babies.
+          </p>
+          <a href="#my-requests">Request care</a>
+        </article>
+
+        <!-- Caregiver card 2 -->
+        <article>
+          <h3>Auntie Rebecca Maphutha</h3>
+          <p>Polokwane</p>
+          <p>12 years of experience · R3 500 per month</p>
+          <p>Available now</p>
+          <p>
+            Patient and warm, experienced with babies from 2 months to 3 years.
+          </p>
+          <a href="#my-requests">Request care</a>
+        </article>
+
+        <!-- Caregiver card 3 -->
+        <article>
+          <h3>Gogo Sarah Maluleke</h3>
+          <p>Seshego</p>
+          <p>20 years of experience · R2 800 per month</p>
+          <p>Available from December 2025</p>
+          <p>Specialises in twins and babies who struggle to sleep.</p>
+          <a href="#my-requests">Request care</a>
+        </article>
+      </section>
+
+      <!-- ========== MY REQUESTS ========== -->
+      <section id="my-requests">
+        <h2>My requests</h2>
+
+        <!-- Request card 1 -->
+        <article>
+          <h3>Gogo Sarah Maluleke</h3>
+          <p>Sent 22 October 2025</p>
+          <p>
+            "Dumela Gogo Sarah. I return to work in two weeks and need someone
+            to look after my 2-month-old, ideally for the next 6 months. Are you
+            available?"
+          </p>
+          <p>Status: Pending</p>
+        </article>
+
+        <p>
+          Requests you send to caregivers will appear here, along with their
+          status.
+        </p>
+      </section>
+
+      <!-- ========== PROFILE ========== -->
+      <section>
+        <h2>Your profile</h2>
+
+        <dl>
+          <dt>Name</dt>
+          <dd>Lerato Seopela</dd>
+
+          <dt>Email</dt>
+          <dd>mama@mojelas.co.za</dd>
+
+          <dt>WhatsApp</dt>
+          <dd>0710000002</dd>
+
+          <dt>Town</dt>
+          <dd>Seshego</dd>
+
+          <dt>Baby's age</dt>
+          <dd>2 months</dd>
+
+          <dt>Care needed until</dt>
+          <dd>Baby is 8 months old</dd>
+        </dl>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <p>TwoMinds Rosebank hackathon</p>
+    </footer>
+  </body>
+</html>
