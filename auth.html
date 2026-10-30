@@ -171,5 +171,13 @@
     <!-- ==================== SCRIPTS ==================== -->
     <script src="javaScripts/app.js"></script>
     <script src="javaScripts/auth.js"></script>
+    <script>
+      // Read the URL fragment (#mother or #gogo) and click the matching button
+      if (location.hash === "#mother") {
+        document.getElementById("roleParentBtn").click();
+      } else if (location.hash === "#gogo") {
+        document.getElementById("roleCaregiverBtn").click();
+      }
+    </script>
   </body>
 </html>
